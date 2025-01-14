@@ -96,7 +96,7 @@ export function Remixer() {
         </Button>
 
         {outputText && (
-          <div className="p-4 border rounded-lg bg-slate-50">
+          <div className="p-4 border rounded-lg bg-background text-foreground">
             <h2 className="font-semibold mb-2">Remixed Content:</h2>
             <p className="whitespace-pre-wrap">{outputText}</p>
           </div>

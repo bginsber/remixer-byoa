@@ -1,20 +1,28 @@
-A content remixing tool using React.
+# Project Advisor Terminal
+
+A retro-futuristic AI project advisor that helps developers brainstorm, validate, and refine their project ideas.
 
 ## Features
 
-1. Paste in text we want to remix
-2. Click a button to apply the remixing we want for it
-3. Send the request to an AI API endpoint
-4. See the remix in an output box
-5. Add other styling and features that we want as we go
+### 🤖 AI Project Advisor
+- Interactive conversations with Dr. Jordan Rivera, an AI project development coach
+- Specialized advice based on project phase and energy levels
+- Multiple advisor aspects (Validator, Focus Coach) for targeted guidance
 
-## Tech stack
+### 💾 Message Management
+- Save important conversations for future reference
+- Expandable/collapsible message view
+- Real-time message syncing
+- Terminal-themed UI with custom scrollbars
 
-1. React
-2. Tailwind CSS
-3. Vercel
-4. OpenAI API
-5. Shadcn UI
+### 🔐 Database Integration
+- Supabase backend for persistent storage
+- Row Level Security (RLS) for data protection
+- Real-time updates using Supabase subscriptions
+
+## Getting Started
+
+1. Clone the repository
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
@@ -38,19 +46,26 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Google's Gemini AI
+- Supabase (Database & Real-time subscriptions)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Database Schema
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### saved_messages
+- `id`: uuid (primary key)
+- `content`: text
+- `role`: text (user | assistant)
+- `created_at`: timestamptz
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
